@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>footer</title>
+	</head>
 
-<head>
-	<title>footer</title>
-</head>
+	<body>
+		<nav class="navbar navbar-expand bg-dark-subtle">
+			<div class="container-fluid">
+				<a class="navbar-brand fw-bold justify-content-start">© 2025 Kit Cochrane 2025</a>
 
-<body>
-	<nav class="navbar navbar-expand-lg p-3 bg-warning shadow">
-		<div class="container-fluid">
-			<a class="navbar-brand fs-1 fw-bold lavishly-yours-regular" href="index.html">
-				<img src="img/logo.png" width="60" height="100%" class="d-inline-block" alt="Logo">
-				Kit Cochrane
-			</a>
+				<ul class="navbar-nav gap-2 justify-content-end">
+					<li class="nav-item">
+						<a class="bi bi-linkedin" href="https://www.linkedin.com/in/dev-kit"></a>
+					</li>
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+					<li class="nav-item">
+						<a class="bi bi-github" href="https://www.linkedin.com/in/dev-kit"></a>
+					</li>
+				</ul>
 
-			<div class="collapse navbar-collapse justify-content-end" id="headerNav">
-				<ul class="navbar-nav fs-5">
+				<ul class="navbar-nav jersey-10-regular fs-3 justify-content-end">
 					<li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false">
-							Projects
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="inbetween.html">The Inbetween Years</a></li>
-						</ul>
+				
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">About Me</a>
+					</li>
+				
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Projects</a>
+					</li>
+				
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Other Things</a>
+					</li>
+				
+					<li class="nav-item">
+						<button class="btn nav-link" id="btnLightsFooter" type="button" aria-expanded="false" aria-label="Toggle theme">
+							<i class="bi bi-moon-stars-fill" fill="currentColor"></i>
+						</button>
 					</li>
 				</ul>
 			</div>
-		</div>
-	</nav>
-</body>
+		</nav>
 
+		<!--Custom JS-->
+		<script type="module" defer>
+			import { switchLights } from './javasc/darkToggle.js'
+			document.getElementById('btnLightsFooter').addEventListener('click', (e) => { switchLights() })
+		</script>
+	</body>
 </html>

@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Jersey+10&family=Workbench&display=swap');
+
 header {
 	margin: 1rem;
+	top: 1rem !important;
+}
+
+.bi {
+	font-size: 1.5rem;
+}
+
+.logo {
+	font-size: 2.5rem;
+}
+
+.workbench-IBM {
+	font-family: "Workbench", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"BLED" 0,
+		"SCAN" 0;
+}
+
+.bytesized-regular {
+	font-family: "Bytesized", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: large;
+}
+
+.jersey-10-regular {
+	font-family: "Jersey 10", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
