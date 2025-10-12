@@ -1,5 +1,6 @@
-//import dark mode set
+//import modules
 import { setLights } from './javasc/darkToggle.js'
+import { headline } from './animations.js'
 
 //point of entry
 $(function () {
@@ -30,6 +31,9 @@ function main() {
 	}
 	else {
 		setLights(true)
-	}	
+	}
+
+	//call animation functions
+	headline(document.getElementById('headline'))
 }
 
