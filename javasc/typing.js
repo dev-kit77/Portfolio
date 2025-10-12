@@ -64,6 +64,6 @@ async function blink(element, time) {
 	//check if char remains after loop
 	if (element.innerHTML.charAt(element.innerHTML.length - 1)) {
 		//remove fake cursor
-		element.innerHTML = element.innerHTML.replace('_', ' ');
+		element.innerHTML = element.innerHTML.replace('_', '');
 	}
 }
