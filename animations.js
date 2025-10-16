@@ -8,10 +8,10 @@ async function headline(element) {
 
 	await typer(element, 'welcome to my site!');
 
-	await blink(element, 250)
+	await blink(element, 250);
 
-	await remover(element, 19)
+	await remover(element, 19);
 
-	headline(element)
+	headline(element);
 }
 
