@@ -7,9 +7,10 @@ $(function () {
 	//load and inject header
 	$("#header").load("header.html", function () {
 		//load and inject footer
-		$("#footer").load("footer.html", 
+		$("#footer").load("footer.html", function () {
 			//call main
-			main())
+			main()
+		})
 	})
 })
 

@@ -9,10 +9,26 @@ function setLights(setting) {
 	if (setting) {
 		document.documentElement.setAttribute('data-bs-theme', 'light')
 		localStorage.setItem('lights', setting)
-	}
+
+		$('.bg-success-subtle').removeClass('bg-success-subtle').addClass('bg-success');
+		$('.bg-danger-subtle').removeClass('bg-danger-subtle').addClass('bg-danger');
+		$('.bg-warning-subtle').removeClass('bg-warning-subtle').addClass('bg-warning');
+		$('.bg-info-subtle').removeClass('bg-info-subtle').addClass('bg-info');
+		$('.bg-light').removeClass('bg-light').addClass('bg-dark');
+		$('.bg-light-subtle').removeClass('bg-light-subtle').addClass('bg-dark-subtle');
+		$('.text-light').removeClass('text-light').addClass('text-dark');
+	}	
 	else {
 		document.documentElement.setAttribute('data-bs-theme', 'dark')
 		localStorage.setItem('lights', setting)
+
+		$('.bg-success').removeClass('bg-success').addClass('bg-success-subtle');
+		$('.bg-danger').removeClass('bg-danger').addClass('bg-danger-subtle');
+		$('.bg-warning').removeClass('bg-warning').addClass('bg-warning-subtle');
+		$('.bg-info').removeClass('bg-info').addClass('bg-info-subtle');
+		$('.bg-light').removeClass('bg-light').addClass('bg-dark');
+		$('.bg-dark-subtle').removeClass('bg-dark-subtle').addClass('bg-light-subtle');
+		$('.text-dark').removeClass('text-dark').addClass('text-light');
 	}
 }
 
