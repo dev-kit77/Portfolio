@@ -1,5 +1,5 @@
-import { typer, blink,remover } from './javasc/typing.js'
-export { headline }
+import { typer, blink, remover } from './javasc/typing.js'
+export { headline, cursor }
 
 async function headline(element) {	
 	element.innerText = 'K:\\>';
@@ -13,5 +13,11 @@ async function headline(element) {
 	await remover(element, 19);
 
 	headline(element);
+}
+
+async function cursor(elemement) {
+	await blink(elemement, 400)
+
+	cursor()
 }
 

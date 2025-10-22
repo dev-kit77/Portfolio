@@ -7,9 +7,13 @@ export { setLights, switchLights }
  */
 function setLights(setting) {
 	if (setting) {
+		//set theme
 		document.documentElement.setAttribute('data-bs-theme', 'light')
+
+		//store selection
 		localStorage.setItem('lights', setting)
 
+		//update colour classes
 		$('.bg-success-subtle').removeClass('bg-success-subtle').addClass('bg-success');
 		$('.bg-danger-subtle').removeClass('bg-danger-subtle').addClass('bg-danger');
 		$('.bg-warning-subtle').removeClass('bg-warning-subtle').addClass('bg-warning');
@@ -19,9 +23,13 @@ function setLights(setting) {
 		$('.text-light').removeClass('text-light').addClass('text-dark');
 	}	
 	else {
+		//set theme
 		document.documentElement.setAttribute('data-bs-theme', 'dark')
+
+		//store selection
 		localStorage.setItem('lights', setting)
 
+		//update colour classes
 		$('.bg-success').removeClass('bg-success').addClass('bg-success-subtle');
 		$('.bg-danger').removeClass('bg-danger').addClass('bg-danger-subtle');
 		$('.bg-warning').removeClass('bg-warning').addClass('bg-warning-subtle');

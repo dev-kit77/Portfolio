@@ -1,6 +1,6 @@
 //import modules
 import { setLights } from './javasc/darkToggle.js'
-import { headline } from './animations.js'
+import { headline, cursor } from './animations.js'
 
 //point of entry
 $(function () {
@@ -37,4 +37,3 @@ function main() {
 	//call animation functions
 	headline(document.getElementById('headline'))
 }
-
