@@ -124,7 +124,7 @@
 									Access for other parts of the building. This is the project that has really got me interested in
 									Network Engineering.
 								</p>
-								<a href="netSim.pkt" download="ABnegation Company Network.pkt" class="btn fs-4 btn-primary">Download
+								<a href="files/netSim.pkt" download="ABnegation Company Network.pkt" class="btn fs-4 btn-primary">Download
 									Packet Tracer File</a>
 							</div>
 						</div>
@@ -269,12 +269,12 @@
 			<div id="contact" class="anchor"></div>
 			<div class="container-fluid py-4">
 				<div class="row p-3 text-center align-items-center bg-info border-top border-bottom">
-					<h1>Contact Me!</h1>
+					<h1>More Info?</h1>
 				</div>
 			</div>
 			
 			<div class="container p-4">
-				<div class="row my-4 justify-content-around">
+				<div class="row my-4 justify-content-around align-items-center">
 					<div class="col-12 col-md-5 order-1 p-4 mb-md-0 round border bg-success">
 						<h2>Thank You!</h2>
 			
@@ -297,13 +297,45 @@
 							<a class="bi bi-github text-dark" href="https://github.com/dev-kit77"></a>
 						</p>
 
-						<h3>Kit.</h3>
+						<p>
+							For a copy of my CV, please click the download button below! 
+						</p>
+
+						<a href="files/CV.pdf" download="Kit Cochrane CV.pdf" class="btn fs-4 btn-primary mb-3">Download CV (.pdf Format)</a>
+
+						<h2>Kit.</h2>
 					</div>
 			
 					<div class="col-12 col-md-7 order-2 px-5 py-3">
-						<script
-							src="https://spamfreeform.com/sff/sff_info.php?id=1761174384592/dev-kit77.github.io/portfolio/contact"
-							type="text/javascript"></script>
+						<!-- Form action API Endpoint  -->
+						<form action="https://api.web3forms.com/submit" method="POST" id="form">
+							<input type="hidden" name="access_key" value="6bcba8df-a789-4846-a66b-7a804312697f">
+						
+							<input type="hidden" name="subject" value="New Submission">
+						
+							<input type="hidden" name="from_name" value="Portfolio Site">
+
+							<input type="hidden" name="redirect" value="#confirmation">
+						
+							<div class="mb-2">
+								<label for="name" name="name" class="form-label">Name</label>
+								<input type="name" class="form-control" placeholder="John Smith" name="name" required>
+							</div>
+
+							<div class="mb-2">
+								<label for="contactEmail" name="email" class="form-label">Email address</label>
+								<input type="email" class="form-control"  placeholder="name@example.com" name="email" required>
+							</div>
+
+							<div class="mb-2">
+								<label for="contactMessage" class="form-label">Message</label>
+								<textarea class="form-control" name="message" rows="5" required></textarea>
+							</div>
+						
+							<div class="mb-2">
+								<button class="btn btn-primary fs-4" type="submit">Send</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
